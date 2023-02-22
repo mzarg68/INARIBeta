@@ -24,5 +24,5 @@ To test **CENTRAL** Module must to use following credentials
 
 ---
 
-![alt text](ZINKER_48.ICO)
+![alt text](ZinkerLogo.png)
 Designed and Engineered by **[ZINKER](https://zinker.com.br)**
