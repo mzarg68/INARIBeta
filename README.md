@@ -4,7 +4,7 @@
 
 ## INARI Project - Desktop Prototype
 
-| Version 1.50.0 | DB 1.5.1 | ZToys v1.75.0 | Released @29Mar23
+| Version 1.53.0 | DB 1.9.1 | ZToys v1.76.0 | Released @15APR23
 
 To use it must to download whole package, save it on specific folder (folder name suggested: INARI) and run (double-click) on file INARI.accde
 Computer must to have MS Access installed or a runtime version
