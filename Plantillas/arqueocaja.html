@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        font-size: medium;
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* width: 50%; */
+        margin-left: 10px;
+      }
+      th {
+        background-color: #47a8bd;
+        color: whitesmoke;
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+      }
+      td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+      .body {
+        margin-left: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: medium;
+      }
+      .maintitle {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0px;
+        margin-top: 2px;
+        font-size: xx-large;
+        text-align: left;
+        padding-left: 10px;
+      }
+      .title {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        font-size: large;
+        text-align: left;
+        padding-left: 10px;
+      }
+      .posvalues {
+        text-align: right;
+      }
+      .negvalues {
+        text-align: right;
+        color: red;
+      }
+      .total {
+        font-weight: bold;
+        background-color: #014086;
+        color: whitesmoke;
+      }
+      .footer {
+        background-color: #f08700;
+        color: whitesmoke;
+        font-size: medium;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      }
+      .subtitle {
+        color: #014086;
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        border: 2px solid #014086;
+      }
+      .headline {
+        margin: 0px;
+        margin-left: 5px;
+        color: #014086;
+      }
+      .remark {
+        background-color: aquamarine;
+        color: #014086;
+        padding-left: 10px;
+      }
+      .tagline {
+        padding-left: 10px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1 class="maintitle">ARQUEO DE CAJA</h1>
+    <p class="headline">Agencia: #AGENCYNAME# // #AGENCYID#</p>
+    <p class="headline">Fecha Reporte: #REPORTDATE#</p>
+    <p class="headline">Terminal: #TERMINALID#</p>
+    <p class="headline">Operador: #OPERATORNAME#</p>
+    <h2 class="subtitle">RESUMEN DE ARQUEO DE CAJA @#CASHREGISTERDATE#</h2>
+    <table>
+      <tr>
+        <th>Terminal #TERMINALID#</th>
+        <th>Monto</th>
+      </tr>
+      <tr>
+        <td>Inicio</td>
+        #CSTARTING#
+      </tr>
+      <tr>
+        <td>Ingresos</td>
+        #CINCOME#
+      </tr>
+      <tr>
+        <td>Egresos</td>
+        #COUTCOME#
+      </tr>
+      <tr class="total">
+        <td>CAJA</td>
+        #CEXPECTED#
+      </tr>
+      <tr>
+        <td>Fisico</td>
+        #CVERIFIED#
+      </tr>
+      <tr class="total">
+        <td>Diferencia</td>
+        #CDIFFERENCE#
+      </tr>
+    </table>
+    <p class="remark">NOTA: #REGISTERREMARK#</p>
+    <p style="padding-left: 10px">Arqueo realizado @#REGISTERDATE#</p>
+    <hr />
+    <h2 class="title">RESUMEN DETALLADO @#REPORTDATE#</h2>
+    <table>
+      #TERMINALSUMMARY#
+    </table>
+    <hr />
+    <h2 class="footer">INARI #INARITAGLINE# powered by ZINKER</h2>
+  </body>
+</html>

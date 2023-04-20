@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        font-size: medium;
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* margin-left: 5px; */
+        /* margin-right: 5px; */
+        /* width: 100%; */
+      }
+      th {
+        /* background-color: #47a8bd; */
+        background-color: #bfbfbf;
+        /* color: whitesmoke; */
+        color: #014086;
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+      }
+      td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+      .total {
+        font-weight: bold;
+        background-color: #bfbfbf;
+        /* color: whitesmoke; */
+        color: #014086;
+      }
+      .body {
+        margin-left: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: medium;
+      }
+      .maintitle {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0px;
+        margin-top: 2px;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10px;
+        font-size: xx-large;
+      }
+      .title {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        font-size: large;
+        text-align: left;
+        padding-left: 10px;
+      }
+      .values {
+        text-align: right;
+      }
+      .posvalues {
+        text-align: right;
+      }
+      .negvalues {
+        text-align: right;
+        color: red;
+      }
+      .footer {
+        background-color: #f08700;
+        color: whitesmoke;
+        font-size: medium;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      }
+      .subtitle {
+        color: #014086;
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        border: 2px solid #014086;
+      }
+      .headline {
+        margin: 0px;
+        margin-left: 5px;
+        color: #014086;
+      }
+      .remark {
+        background-color: aquamarine;
+        color: #014086;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .tagline {
+        padding-left: 10px;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1 class="maintitle">REPORTE DE ESTADO</h1>
+    <div class="headline">
+      <p>Agencia: #AGENCYNAME# // #AGENCYID#</p>
+      <p>Fecha Reporte: #EMAILCREATION#</p>
+    </div>
+    <hr />
+    <h2 class="title">Resumen de ventas al #REPORTDATE#</h2>
+    <table>
+      <tr>
+        <th>Fecha</th>
+        <th>Venta Neta</th>
+        <th>Premios</th>
+        <th>Comision</th>
+        <th>Venta Bruta</th>
+      </tr>
+      #SALESSUMMARY#
+    </table>
+    <hr />
+    <h2 class="title">Posicion General al #REPORTDATE#</h2>
+    <table>
+      <tr>
+        <th>Libro</th>
+        <th>Inicio</th>
+        <th>Entrada</th>
+        <th>Salida</th>
+        <th>Saldo</th>
+      </tr>
+      #OVERALLSUMMARY#
+    </table>
+    <hr />
+    <h2 class="title">Sumario por Terminal al #REPORTDATE#</h2>
+    <table>
+      #TERMINALSSUMMARY#
+    </table>
+    <hr />
+    <h2 class="title">CUENTA CORRIENTE AL #REPORTDATE#</h2>
+    <p class="subtitle">MOVIMIENTOS DE CUENTA CORRIENTE AL #REPORTDATE#</p>
+    <table>
+      #CURRENTACCOUNTSUMMARY#
+    </table>
+    <p class="subtitle">TOP 5 DEUDORES AL #REPORTDATE#</p>
+    <table>
+      <tr>
+        <th>TOP</th>
+        <th>Cliente</th>
+        <th>Deuda</th>
+        <th>% Deuda</th>
+        <th>Ultimo registro</th>
+      </tr>
+      #TOP5SDEBTORS#
+    </table>
+    #TOP5TAGLINE#
+    <p class="subtitle">NOVEDADES AL #REPORTDATE#</p>
+    #CUSTOMERSNOTICE#
+    <hr />
+    <h2 class="footer">INARI #INARITAGLINE# powered by ZINKER</h2>
+  </body>
+</html>

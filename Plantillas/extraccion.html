@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        font-size: medium;
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 30%;
+        margin-left: 10px;
+      }
+      th {
+        background-color: #47a8bd;
+        color: whitesmoke;
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+      }
+      td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+      .body {
+        margin-left: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: medium;
+      }
+      .maintitle {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0px;
+        margin-top: 2px;
+        font-size: xx-large;
+        text-align: left;
+      }
+      .title {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        font-size: large;
+        text-align: left;
+      }
+      .values {
+        text-align: right;
+      }
+      .total {
+        font-weight: bold;
+        background-color: #014086;
+        color: whitesmoke;
+      }
+      .footer {
+        background-color: #f08700;
+        color: whitesmoke;
+        font-size: medium;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      }
+      .subtitle {
+        color: #014086;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        border: 2px solid #014086;
+      }
+      .headline {
+        margin: 0px;
+        margin-left: 5px;
+        color: #014086;
+      }
+      .posvalues {
+        text-align: right;
+      }
+      .negvalues {
+        text-align: right;
+        color: red;
+      }
+      .remark {
+        background-color: aquamarine;
+        color: #014086;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .alert {
+        background-color: red;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1 class="maintitle">RETIRO DE TESORO</h1>
+    <p class="headline">Agencia: #AGENCYNAME# // #AGENCYID#</p>
+    <p class="headline">Fecha envio: #REPORTDATE#</p>
+    <p class="headline">Operador: #OPERATORNAME#</p>
+    <p></p>
+    <p class="headline">Retiro del tesoro realizado el #TRANSACTIONDATE#</p>
+    <p class="headline">- Saldo Tesoro anterior: #TREASURYBALANCEPRIOR#</p>
+    <p class="headline">- Monto retirado: <b>#EXTRACTIONAMOUNT#</b></p>
+    <p class="headline">- Saldo Tesoro posterior: #TREASURYBALANCE#</p>
+    <p></p>
+    #EXTRACTIONREMARK#
+    <hr />
+    <h2 class="title">ESTADO GENERAL ANTES DEL RETIRO</h2>
+    <table>
+      <tr>
+        <th>Concepto</th>
+        <th>Monto</th>
+      </tr>
+      <tr>
+        <td>Terminales</td>
+        <td class="posvalues">#TERMINALBALANCE#</td>
+      </tr>
+      <tr>
+        <td>Tesoro</td>
+        <td class="posvalues">#TREASURYBALANCE#</td>
+      </tr>
+      <tr class="total">
+        <td>Disponible</td>
+        <td class="posvalues">#AVAILABLEBALANCE#</td>
+      </tr>
+      <tr>
+        <td>Saldo de Banco</td>
+        #BANKBALANCE#
+      </tr>
+      <tr>
+        <td>Premios a Pagar</td>
+        #PRIZETOPAYBALANCE#
+      </tr>
+      <tr>
+        <td>Previsiones a Pagar</td>
+        #FORECASTBALANCE#
+      </tr>
+      <tr class="total">
+        <td>Resultado Liquido</td>
+        #LIQUIDBALANCE#
+      </tr>
+      <tr>
+        <td>Saldo Clientes</td>
+        #CUSTOMERBALANCE#
+      </tr>
+      <tr>
+        <td>Saldo Empleados</td>
+        #EMPLOYEEBALANCE#
+      </tr>
+      <tr class="total">
+        <td>Resultado Final</td>
+        #RESULTBALANCE#
+      </tr>
+    </table>
+    <hr />
+    <h2 class="footer">INARI #INARITAGLINE# powered by ZINKER</h2>
+  </body>
+</html>
