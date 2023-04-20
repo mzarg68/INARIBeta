@@ -4,7 +4,7 @@
 
 ## INARI Project - Desktop Prototype
 
-| Version 1.53.0 | DB 1.9.1 | ZToys v1.76.0 | Released @15APR23
+| Version 1.54.0 | DB 1.10.0 | ZToys v1.76.0 | Released @20APR23
 
 To use it must to download whole package, save it on specific folder (folder name suggested: INARI) and run (double-click) on file INARI.accde
 Computer must to have MS Access installed or a runtime version
@@ -21,7 +21,8 @@ Phone: +55 11 97315-6112
 To test **AGENCY** Module must to use following credentials
 | User ID | Password |
 | ----------- | ----------- |
-| AGENCIA | INARI |
+| oper | INARI |
+| respo | INARI |
 
 To test **CENTRAL** Module must to use following credentials
 | User ID | Password |
