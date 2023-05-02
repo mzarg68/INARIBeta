@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        font-size: medium;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #014086;
+        /* width: 100%; */
+      }
+      th {
+        background-color: #47a8bd;
+        color: whitesmoke;
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+      }
+      td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+      .body {
+        margin-left: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: medium;
+      }
+      .maintitle {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        margin-top: 2px;
+        font-size: 20px;
+        text-align: left;
+        font-size: xx-large;
+      }
+      .title {
+        background-color: #014086;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        font-size: large;
+        text-align: left;
+      }
+      .total {
+        font-weight: bold;
+        background-color: #014086;
+        color: whitesmoke;
+      }
+      .footer {
+        background-color: #f08700;
+        color: whitesmoke;
+        font-size: medium;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      }
+      .subtitle {
+        color: #014086;
+        text-align: left;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        border: 2px solid #014086;
+      }
+      .headline {
+        margin: 0px;
+        margin-left: 5px;
+        color: #014086;
+      }
+      .values {
+        text-align: right;
+      }
+      .posvalues {
+        text-align: right;
+      }
+      .negvalues {
+        text-align: right;
+        color: red;
+      }
+      .remark {
+        background-color: aquamarine;
+        color: #014086;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .alert {
+        background-color: red;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1 class="maintitle">NUEVO CLIENTE</h1>
+    <p class="headline">Fecha: #EMAILCREATION#</p>
+    <p class="headline">Agencia: #AGENCYNAME# // #AGENCYID#</p>
+    <hr />
+    <h2 class="subtitle">Nuevo cliente</h2>
+    <table>
+      <tr>
+        <td style="background-color: #dddddd">ID</td>
+        <td>#CUSTOMERID#</td>
+      </tr>
+      <tr>
+        <td style="background-color: #dddddd">Nombre</td>
+        <td>#CUSTOMERNAME#</td>
+      </tr>
+      <tr>
+        <td style="background-color: #dddddd">Telefono</td>
+        <td>#CUSTOMERPHONE#</td>
+      </tr>
+    </table>
+    <p style="color: #014086">>> Cliente agregado por Gabriela Mistral</p>
+    <hr />
+    #LOANSUMMARY#
+    <hr />
+    <h2 class="footer">INARI #INARITAGLINE# powered by ZINKER</h2>
+  </body>
+</html>
